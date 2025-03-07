@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirat Sandhu - Time Card System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kirat Sandhu - Time Card System</h1>
+        
+        <form id="timeCardForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="timeIn">Time In:</label>
+            <input type="time" id="timeIn" required>
+
+            <label for="timeOut">Time Out:</label>
+            <input type="time" id="timeOut" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="submittedData">
+            <h2>Submitted Time Cards:</h2>
+            <table id="timeCardsTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Contact</th>
+                        <th>Date</th>
+                        <th>Time In</th>
+                        <th>Time Out</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
